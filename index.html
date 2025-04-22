@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerassentials - Nail Fungus Treatment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+    }
+
+    .language-bar {
+      width: 100%;
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .language-bar select {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 60px auto 20px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    img {
+      width: 150px;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    a.button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-bar">
+    <select id="language-selector">
+      <option value="en">English</option>
+      <option value="pt">Português</option>
+      <option value="es">Español</option>
+      <option value="it">Italiano</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <img src="./img.jpeg" alt="Kerassentials">
+
+    <h1 id="title">Say Goodbye to Nail Fungus with Kerassentials</h1>
+    <p id="desc1">Kerassentials is a powerful natural formula that helps eliminate fungus, strengthens nails, and improves skin health.</p>
+    <p id="desc2">Backed by thousands of satisfied customers and proven results in the U.S.</p>
+
+    <a class="button" href="https://www.checkout-ds24.com/redir/533765/marloonbfss/" target="_blank" id="btn">Learn More</a>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        title: "Say Goodbye to Nail Fungus with Kerassentials",
+        desc1: "Kerassentials is a powerful natural formula that helps eliminate fungus, strengthens nails, and improves skin health.",
+        desc2: "Backed by thousands of satisfied customers and proven results in the U.S.",
+        btn: "Learn More"
+      },
+      pt: {
+        title: "Diga Adeus ao Fungos nas Unhas com Kerassentials",
+        desc1: "Kerassentials é uma fórmula natural poderosa que elimina fungos, fortalece as unhas e melhora a saúde da pele.",
+        desc2: "Aprovado por milhares de clientes satisfeitos e com resultados comprovados nos EUA.",
+        btn: "Saiba Mais"
+      },
+      es: {
+        title: "Dile adiós a los hongos en las uñas con Kerassentials",
+        desc1: "Kerassentials es una fórmula natural poderosa que elimina hongos, fortalece las uñas y mejora la salud de la piel.",
+        desc2: "Respaldado por miles de clientes satisfechos y resultados comprobados en EE. UU.",
+        btn: "Saber más"
+      },
+      it: {
+        title: "Dì addio ai funghi delle unghie con Kerassentials",
+        desc1: "Kerassentials è una potente formula naturale che elimina i funghi, rafforza le unghie e migliora la salute della pelle.",
+        desc2: "Approvato da migliaia di clienti soddisfatti e risultati comprovati negli Stati Uniti.",
+        btn: "Scopri di più"
+      },
+      fr: {
+        title: "Dites adieu aux champignons des ongles avec Kerassentials",
+        desc1: "Kerassentials est une formule naturelle puissante qui élimine les champignons, renforce les ongles et améliore la santé de la peau.",
+        desc2: "Approuvé par des milliers de clients satisfaits avec des résultats prouvés aux États-Unis.",
+        btn: "En savoir plus"
+      }
+    };
+
+    document.getElementById("language-selector").addEventListener("change", (e) => {
+      const lang = e.target.value;
+      document.getElementById("title").textContent = translations[lang].title;
+      document.getElementById("desc1").textContent = translations[lang].desc1;
+      document.getElementById("desc2").textContent = translations[lang].desc2;
+      document.getElementById("btn").textContent = translations[lang].btn;
+    });
+  </script>
+</body>
+</html>
